@@ -19,7 +19,7 @@ Week 5: Saturday, 2026-Oct-03
    3. [Install and configure Git](https://code.visualstudio.com/docs/sourcecontrol/overview#_prerequisites).
    4. Clone the
       [e-book](https://github.com/bjones1/literate-programming-book) -- see
-      [Clone repositories](https://code.visualstudio.com/docs/sourcecontrol/repos-remotes#_clone-repositories)
+      [Clone repositories](https://code.visualstudio.comP/docs/sourcecontrol/repos-remotes#_clone-repositories)
       for step-by-step directions.
 5. Enable Capture when using the CodeChat Editor.
 6. Articles:
