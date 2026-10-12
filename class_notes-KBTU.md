@@ -39,7 +39,7 @@ Week 6: Saturday, 2026-Oct-10
    5. Creating fragments with a unique ID.
    6. Gathering fragments.
 9. GitHub use -- collaborative software development
-   1. Clone the
+   1. Browse to the
       [collaborative class repo](https://github.com/bjones1/literate-programming-github-2026).
    2. See the [GitHub notes](git_intro.md).
 10. Developing a specification.
