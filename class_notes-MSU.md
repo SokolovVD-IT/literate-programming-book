@@ -4,6 +4,24 @@ MSU class notes
 Week 8
 ------
 
+### Wednesday, 2026-Oct-14
+
+1. [Homework](https://canvas.msstate.edu/courses/186065/assignments) - due
+   Sunday! Will be released after today's class.
+2. Enable Capture when using the CodeChat Editor.
+3. CodeChat Editor features: clone [htmd](https://github.com/letmutex/htmd).
+   1. Creating a project.
+   2. Adding entries to the table of contents.
+   3. Adding a unique ID to headings.
+   4. Cross-references.
+   5. Creating fragments with a unique ID.
+   6. Gathering fragments.
+4. Simple spec design: Create a program that asks the user to select a course and enables the user to enter five test scores for that course. It displays the average rounded to one decimal place and the resulting letter grade.
+   Implementation:
+   * TypeScript.
+   * Vue.js using the Composition API.
+   * PrimeVue v4 for controls.
+
 ### Monday, 2026-Oct-12
 
 1. [Homework](https://canvas.msstate.edu/courses/186065/assignments) - due
@@ -14,9 +32,8 @@ Week 8
 4. Spec design for
    [git-hint](https://github.com/bjones1/literate-programming-fall-2024), on the
    `git-tool` branch.
-5. Dev notes:
-   recent [CodeChat Editor](https://github.com/bjones1/CodeChat_Editor)
-   features.
+5. Dev notes: recent
+   [CodeChat Editor](https://github.com/bjones1/CodeChat_Editor) features.
    1. Clone this repo.
    2. View the following sections of CodeChat Editor manual (`README.md`):
       1. Cross-references
