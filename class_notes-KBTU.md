@@ -1,6 +1,22 @@
 KBTU class notes
 ================
 
+Week 7: Saturday, 2026-Oct-17
+-----------------------------
+
+1. Attendance is taken online during the first 10 minutes of each class session.
+   Mark yourself as present!
+2. Homework is due next Friday; see Assignments in the
+   [course team](https://teams.cloud.microsoft/l/team/19%3A1zAx6-5JAiMa-lWMwfGS_gCGKl2WS72-A-RtNFHAXkg1%40thread.tacv2/conversations?groupId=4e917b3b-d914-4d2b-807e-c8029802603f&tenantId=57081b5e-e66a-4993-8eaf-15b0b309293f).
+3. Questions? Message me on Teams / meet on Teams.
+5. Enable Capture when using the CodeChat Editor.
+5. Specification design exercises:
+   1. [Grade calculator](exercises/grade-calculator.md)
+   2. [Slugify](exercises/slugify.md)
+   3. [Split the bill](exercises/split-bill.md)
+   4. [Business days](exercises/business-days.md)
+   5. [Top words](exercises/top-words.md)
+
 Week 6: Saturday, 2026-Oct-10
 -----------------------------
 
