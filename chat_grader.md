@@ -6,9 +6,9 @@ Python Implementation
 
 * For Python, use uv for package management.
 * Add standard test/lint tools (see
-  [https://github.com/bjones1/CodeChat\_system/blob/master/CodeChat\_Server/tests/pre\_commit\_check.py](https://github.com/bjones1/CodeChat_system/blob/master/CodeChat_Server/tests/pre_commit_check.py)
+  [https://github.com/bjones1/CodeChat_system/blob/master/CodeChat_Server/tests/pre_commit_check.py](https://github.com/bjones1/CodeChat_system/blob/master/CodeChat_Server/tests/pre_commit_check.py)
   and config files at
-  [https://github.com/bjones1/CodeChat\_system/tree/master/CodeChat\_Server](https://github.com/bjones1/CodeChat_system/tree/master/CodeChat_Server)).
+  [https://github.com/bjones1/CodeChat_system/tree/master/CodeChat_Server](https://github.com/bjones1/CodeChat_system/tree/master/CodeChat_Server)).
 * Use [https://github.com/fastapi/typer](https://github.com/fastapi/typer) for
   the CLI.
 
@@ -28,45 +28,47 @@ Git homework grader
 
 Create a grading tool which grades the following homework assignment:
 
-> In the [class](https://github.com/bjones1/literate-programming-fall-2024/)
-> repository:
+> Your userid is your KBTU e-mail address without the @kbtu.kz suffix. For
+> example, my e-mail address is b.jones@kbtu.kz so my userid is b.jones.
 >
-> 1. Create a branch whose name is your netid. Commit two files to it.
+> In the
+> [class repository](https://github.com/bjones1/literate-programming-git-2026):
+>
+> 1. Create a branch whose name is your userid. Commit two new files to it.
 > 2. Merge someone else's branch into the main branch. The commit message must
->    be: ": merge branch with main".
+>    be: "\<your userid>: merge branch with main".
 > 3. Push all your changes to the repository.
 
-A netid is the unique username assigned to every student. Do not keep a roster:
-given a start and an end date, grade every netid the repository itself shows
+A userid is the unique username assigned to every student. Do not keep a roster:
+given a start and an end date, grade every userid the repository itself shows
 working between them -- everyone who pushed a branch whose tip was committed in
-that range, and everyone whose netid a merge made in that range names in its
+that range, and everyone whose userid a merge made in that range names in its
 message, which is the only trace of a student who merged without pushing a
-branch of their own. Both dates are whole days, and both count in full. A netid
+branch of their own. Both dates are whole days, and both count in full. A userid
 may also be named on the command line, for a student who left nothing behind at
 all and would otherwise have no row.
 
 The grading rubric is:
 
-\_\_\_\_/30 points -- Branch created with your netid. Commit hash:
-\_\_\_\_\_\_\_\_\_ \_\_\_\_/30 points (15 points per file) -- Two files
-committed to this branch. Commit hash(es): \_\_\_\_\_\_\_\_\_,
-\_\_\_\_\_\_\_\_\_ \_\_\_\_/40 points -- At least one merge commit exists with
-the correct commit message. Commit hash: \_\_\_\_\_\_\_\_\_
+30 points -- Branch created with your userid.
+30 points (15 points per file) -- Two files committed to this branch.
+40 points -- At least one merge commit exists with
+the correct commit message.
 
 These lines are also the feedback text, so they stay short; the rules for
 applying them follow. All branch names and commit messages are compared ignoring
 case and surrounding whitespace.
 
-1. *Branch.* A branch on the remote whose name is exactly the netid: `jit45`
+1. *Branch.* A branch on the remote whose name is exactly the userid: `jit45`
    counts, `jit45-2` and `bensBranch` do not. Report the branch's tip commit.
    Without such a branch, this line and the next both score 0.
 2. *Two files.* Files added by the student's own commits on that branch: the
    commits along the branch's own first parent, made this year, and written by
    the student -- who is taken to be the author of the branch's most recent
    ordinary commit, since a commit records a person's name rather than their
-   netid. Work merged *in* arrives as a second parent and so does not count, and
-   neither does the history the branch was cut from, which may well include a
-   classmate's commit straight to `main`. "Not reachable from `main`" will not
+   userid. Work merged *in* arrives as a second parent and so does not count,
+   and neither does the history the branch was cut from, which may well include
+   a classmate's commit straight to `main`. "Not reachable from `main`" will not
    serve here: a student who merges their branch into `main`, as step 2 asks
    them to, has put every one of their commits on `main`. Score 15 points per
    file, to a maximum of 30, no matter how many the branch adds. Report the hash
@@ -74,36 +76,29 @@ case and surrounding whitespace.
    adding both files is reported twice. Files that are modified, renamed, or
    deleted do not count.
 3. *Merge.* A commit with two or more parents, reachable from `main`, whose
-   *first* message line is `<netid>: merge branch with main` -- only the first
+   *first* message line is `<userid>: merge branch with main` -- only the first
    line, since Git appends its own body text to a merge message. The merge must
    bring in someone else's work, judged by the commits it adds to `main` --
    those its later parents reach and its first parent does not -- rather than by
    the branch it names. One such commit is the student's own only when their
-   netid branch can reach it and no other student's netid branch can, so a
+   userid branch can reach it and no other student's userid branch can, so a
    classmate's branch which this student had already merged into their own is
    still the classmate's, whether the student then merges that branch into
    `main` or merges their own branch carrying it. Merging a branch which holds
    nothing but the student's own commits brings in nobody else's work and so
    earns nothing. Report the earliest qualifying commit.
 
-The class repository carries branches and commits from previous years of this
-course, and some netids recur between years; this is what the start date is for,
-and it defaults to 2026-Aug-01. Nothing committed outside the date range counts,
-toward a grade or toward being graded at all. Step 3 of the assignment earns no
-points of its own, since work which was never pushed is invisible to the grader
-and so scores zero already.
-
-The tool should output a simple CSV file with three columns: netid, grade, and
-feedback. Write one row per netid found, in alphabetical order. The grade is the
-point total written as a percentage, from `0%` to `100%`. The feedback is the
-three rubric lines, one per line, with the underlines filled in with the points
-earned and with commit hashes abbreviated to eight characters; a criterion which
-is not met earns 0 points and reads `not found` where its hashes would go. The
-feedback therefore contains newlines, and must be quoted as RFC 4180 requires.
-One row, with its feedback shown unquoted:
+The tool should output a simple CSV file with three columns: userid, grade, and
+feedback. Write one row per userid found, in alphabetical order. The grade is
+the point total written as a percentage, from `0%` to `100%`. The feedback is
+the three rubric lines, one per line, with the underlines filled in with the
+points earned and with commit hashes abbreviated to eight characters; a
+criterion which is not met earns 0 points and reads `not found` where its hashes
+would go. The feedback therefore contains newlines, and must be quoted as RFC
+4180 requires. One row, with its feedback shown unquoted:
 
 ```
-ewj55,100%,30/30 points -- Branch created with your netid. Commit hash: a01d9899
+ewj55,100%,30/30 points -- Branch created with your userid. Commit hash: a01d9899
            30/30 points (15 points per file) -- Two files committed to this branch. Commit hash(es): a01d9899, a01d9899
            40/40 points -- At least one merge commit exists with the correct commit message. Commit hash: f6fd3bcc
 ```

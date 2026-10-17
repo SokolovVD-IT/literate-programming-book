@@ -1,6 +1,55 @@
 MSU class notes
 ===============
 
+Week 8
+------
+
+### Friday, 2026-Oct-16
+
+1. [Homework](https://canvas.msstate.edu/courses/186065/assignments) - due
+   Sunday!
+2. Enable Capture when using the CodeChat Editor.
+3. [Grade calculator](exercises/grade-calculator.md) spec design exercise.
+
+### Wednesday, 2026-Oct-14
+
+1. [Homework](https://canvas.msstate.edu/courses/186065/assignments) - due
+   Sunday!
+2. Enable Capture when using the CodeChat Editor.
+3. CodeChat Editor features: clone [htmd](https://github.com/letmutex/htmd).
+   1. Creating a project.
+   2. Adding entries to the table of contents.
+   3. Adding a unique ID to headings.
+   4. Cross-references.
+   5. Creating fragments with a unique ID.
+   6. Gathering fragments.
+
+### Monday, 2026-Oct-12
+
+1. [Homework](https://canvas.msstate.edu/courses/186065/assignments) - due
+   Sunday! Will be released after today's class.
+2. Enable Capture when using the CodeChat Editor.
+3. Article:
+   [Investigating unintended model actions in our evaluations and internal use](https://www.anthropic.com/research/investigating-unintended-model-actions).
+4. Spec design for
+   [git-hint](https://github.com/bjones1/literate-programming-fall-2024), on the
+   `git-tool` branch.
+5. Dev notes: recent
+   [CodeChat Editor](https://github.com/bjones1/CodeChat_Editor) features.
+   1. Clone this repo.
+   2. View the following sections of CodeChat Editor manual (`README.md`):
+      1. Cross-references
+      2. Gathering fragments
+   3. Look at the cache spec under Server / processing.rs section on Cache
+      design.
+6. CodeChat Editor features: clone [htmd](https://github.com/letmutex/htmd).
+   1. Creating a project.
+   2. Adding entries to the table of contents.
+   3. Adding a unique ID to headings.
+   4. Cross-references.
+   5. Creating fragments with a unique ID.
+   6. Gathering fragments.
+
 Week 7
 ------
 
@@ -30,8 +79,8 @@ Week 5
 
 ### Friday, 2026-Sep-25
 
-> "AI can help you express your opinion. It shouldn’t manufacture one for you."
-> -- [Brian Jenney](https://spectrum.ieee.org/top-engineering-skills)
+> "AI can help you express your opinion. It shouldn’t manufacture one for
+> you." -- [Brian Jenney](https://spectrum.ieee.org/top-engineering-skills)
 
 1. [Homework](https://canvas.msstate.edu/courses/186065/assignments) - due
    Sunday!
@@ -45,13 +94,15 @@ Week 5
    1. Review current input.
    2. Testing.
 6. Spec design for converting HTML to
-   [CommonMark](https://spec.commonmark.org/0.31.2/) ([demo](https://spec.commonmark.org/dingus/)).
+   [CommonMark](https://spec.commonmark.org/0.31.2/)
+   ([demo](https://spec.commonmark.org/dingus/)).
    1. Assume you have context: a tree of parsed HTML, the current tag name, its
       attributes, and its content.
    2. Construct a state machine composed of CommonMark states.
       ([draw.io](https://draw.io/),
       [Mermaid](https://www.mermaidonline.live/editor)
-      ([state diagram docs](https://mermaid.ai/open-source/syntax/stateDiagram.html)), [GraphViz](https://dreampuf.github.io/GraphvizOnline/),
+      ([state diagram docs](https://mermaid.ai/open-source/syntax/stateDiagram.html)),
+      [GraphViz](https://dreampuf.github.io/GraphvizOnline/),
       ([FSM docs](https://graphviz.org/Gallery/directed/fsm.html)), etc.)
 
 ### Wednesday, 2026-Sep-23

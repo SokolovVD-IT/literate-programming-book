@@ -1,6 +1,22 @@
 KBTU class notes
 ================
 
+Week 7: Saturday, 2026-Oct-17
+-----------------------------
+
+1. Attendance is taken online during the first 10 minutes of each class session.
+   Mark yourself as present!
+2. Homework is due next Friday; see Assignments in the
+   [course team](https://teams.cloud.microsoft/l/team/19%3A1zAx6-5JAiMa-lWMwfGS_gCGKl2WS72-A-RtNFHAXkg1%40thread.tacv2/conversations?groupId=4e917b3b-d914-4d2b-807e-c8029802603f&tenantId=57081b5e-e66a-4993-8eaf-15b0b309293f).
+3. Questions? Message me on Teams / meet on Teams.
+5. Enable Capture when using the CodeChat Editor.
+5. Specification design exercises:
+   1. [Grade calculator](exercises/grade-calculator.md)
+   2. [Slugify](exercises/slugify.md)
+   3. [Split the bill](exercises/split-bill.md)
+   4. [Business days](exercises/business-days.md)
+   5. [Top words](exercises/top-words.md)
+
 Week 6: Saturday, 2026-Oct-10
 -----------------------------
 
@@ -19,7 +35,10 @@ Week 6: Saturday, 2026-Oct-10
    3. Restart extensions.
    4. Open the CodeChat Editor.
 5. Enable Capture when using the CodeChat Editor.
-6. Dev notes:
+6. Articles
+   1. [3 Skills That Will Matter More in the Age of AI](https://spectrum.ieee.org/top-engineering-skills)
+   2. [Investigating unintended model actions in our evaluations and internal use](https://www.anthropic.com/research/investigating-unintended-model-actions)
+7. Dev notes:
    recent [CodeChat Editor](https://github.com/bjones1/CodeChat_Editor)
    features.
    1. Clone this repo.
@@ -28,14 +47,18 @@ Week 6: Saturday, 2026-Oct-10
       2. Gathering fragments
    3. Look at the cache spec under Server / processing.rs section on Cache
       design.
-7. CodeChat Editor features:
+8. CodeChat Editor features: clone [htmd](https://github.com/letmutex/htmd).
    1. Creating a project.
    2. Adding entries to the table of contents.
    3. Adding a unique ID to headings.
    4. Cross-references.
    5. Creating fragments with a unique ID.
    6. Gathering fragments.
-8. Developing a specification.
+9. GitHub use -- collaborative software development
+   1. Browse to the
+      [collaborative class repo](https://github.com/bjones1/literate-programming-github-2026).
+   2. See the [GitHub notes](git_intro.md).
+10. Developing a specification.
 
 Week 5: Saturday, 2026-Oct-03
 -----------------------------
